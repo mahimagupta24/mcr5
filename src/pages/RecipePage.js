@@ -70,9 +70,9 @@ export default function RecipePage() {
       <ul>
         {recipes.map((recipe) => (
           <li>
-            <p>{recipe.name}</p>
-            <p>{recipe.cuisine}</p>
-            <p>{recipe.instructions}</p>
+            <p>Name:{recipe.name}</p>
+            <p>Cuisine:{recipe.cuisine}</p>
+            <p>Instructions:{recipe.instructions}</p>
           </li>
         ))}
       </ul>
