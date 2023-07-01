@@ -9,10 +9,9 @@ function App() {
     <div className="App">
        <Routes>
       <Route path ="/"element={<RecipePage/>}/>
-      <Route path ="/details"element={<RecipeDetails/>}/>
+      <Route path ="/details/:recipeName"element={<RecipeDetails/>}/>
     </Routes>
-    <Link to= "/">Main page</Link>||
-    <Link to= "/details">Recipe details</Link>
+   
     </div>
   );
 }
