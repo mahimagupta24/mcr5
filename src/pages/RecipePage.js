@@ -56,7 +56,7 @@ export default function RecipePage() {
   return (
     <div>
       <h1>All Recipes</h1>
-      <input type="text" onChange={(e) => handleSearchText(e.target.value)} />
+      <input placeholder="search here" type="text" onChange={(e) => handleSearchText(e.target.value)} />
       <input type= "radio"value="name"checked={sortCategory === "name"}onChange={()=>setSortCategory("name")}/><label>Name</label>
       <input
         type="radio"
