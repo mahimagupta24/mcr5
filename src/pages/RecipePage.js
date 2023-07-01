@@ -6,6 +6,7 @@ export default function RecipePage() {
   const { recipes, setRecipes } = useContext(RecipeContext);
   const [searchText, setSearchText] = useState("");
   const [sortCategory, setSortCategory] = useState("name");
+  
   const [newRecipe, setNewRecipe] = useState({
     img: "",
     name: "",
@@ -77,25 +78,31 @@ export default function RecipePage() {
               setNewRecipe({ ...newRecipe, img: imgUrl });
             }}
           />
+          <div>
           <input
             value={newRecipe.name}
+            placeholder="name"
             onChange={(e) =>
               setNewRecipe({ ...newRecipe, name: e.target.value })
             }
           />
-
+</div>
+<div>
           <input
             value={newRecipe.cuisine}
             onChange={(e) =>
               setNewRecipe({ ...newRecipe, cuisine: e.target.value })
             }
           />
+          </div>
+          <div>
           <input
             value={newRecipe.instructions}
             onChange={(e) =>
               setNewRecipe({ ...newRecipe, instructions: e.target.value })
             }
           />
+          </div>
           <button onClick={handleAddRecipe}>Save</button>
           <button onClick={() => setShowModal(false)}>Cancel</button>
         </div>
