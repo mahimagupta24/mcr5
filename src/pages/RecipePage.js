@@ -88,7 +88,7 @@ export default function RecipePage() {
           />
 </div>
 <div>
-          <input
+          <input placeholder="cuisine"
             value={newRecipe.cuisine}
             onChange={(e) =>
               setNewRecipe({ ...newRecipe, cuisine: e.target.value })
@@ -97,6 +97,7 @@ export default function RecipePage() {
           </div>
           <div>
           <input
+          placeholder="instructions"
             value={newRecipe.instructions}
             onChange={(e) =>
               setNewRecipe({ ...newRecipe, instructions: e.target.value })
